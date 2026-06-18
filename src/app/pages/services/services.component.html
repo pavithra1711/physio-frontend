@@ -1,0 +1,46 @@
+<section class="services-section py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Physiotherapy Services</h2>
+      <p class="section-subtitle">
+        Personalized treatments designed to help you move better and live pain free.
+      </p>
+    </div>
+
+    <div class="row">
+
+      <div
+        class="col-lg-4 col-md-6 mb-4"
+        *ngFor="let service of services">
+
+        <div class="card service-card h-100">
+
+          <img
+            [src]="service.image"
+            [alt]="service.title"
+            class="card-img-top">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              {{service.title}}
+            </h5>
+
+            <p class="card-text">
+              {{service.description}}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<img src="assets/images/physiotherapist.jpg"
+     class="about-image img-fluid"
+     alt="Physiotherapist">

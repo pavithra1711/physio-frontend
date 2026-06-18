@@ -1,0 +1,183 @@
+<section class="contact-section py-5">
+
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">
+        Book an appointment or reach out for any physiotherapy consultation.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+
+        <div class="contact-card">
+
+          <h4 class="mb-4">Send an Inquiry</h4>
+
+          <form (ngSubmit)="submitForm()">
+
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="form.name"
+                name="name"
+                placeholder="Full Name"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="form.mobile"
+                name="mobile"
+                placeholder="Mobile Number"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <select
+                class="form-select"
+                [(ngModel)]="form.service"
+                name="service">
+
+                <option value="">Select Service</option>
+                <option>Back Pain Treatment</option>
+                <option>Neck Pain Treatment</option>
+                <option>Sports Injury Rehabilitation</option>
+                <option>Post Surgery Rehabilitation</option>
+                <option>Home Visit Physiotherapy</option>
+
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                [(ngModel)]="form.message"
+                name="message"
+                placeholder="Describe your concern">
+              </textarea>
+            </div>
+
+            <button class="btn btn-primary btn-lg w-100">
+              Send Inquiry
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+
+        <div class="contact-info-card">
+
+          <h4>Clinic Information</h4>
+
+          <div class="info-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+91 91505 20609</span>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-whatsapp"></i>
+            <span>+91 91505 20609</span>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>info@physiocare.com</span>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>
+              Your Clinic Address,
+              Chennai, Tamil Nadu
+            </span>
+          </div>
+
+          <div class="d-grid gap-3 mt-4">
+
+            <a
+              href="tel:+919150520609"
+              class="btn btn-success">
+
+              Call Now
+            </a>
+
+            <a
+              href="https://wa.me/919150520609"
+              target="_blank"
+              class="btn btn-outline-success">
+
+              WhatsApp Us
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="hours-section py-5">
+
+  <div class="container">
+
+    <div class="hours-card">
+
+      <h3 class="text-center mb-4">
+        Business Hours
+      </h3>
+
+      <div class="row text-center">
+
+        <div class="col-md-4">
+          <strong>Monday - Friday</strong>
+          <p>09:00 AM - 07:00 PM</p>
+        </div>
+
+        <div class="col-md-4">
+          <strong>Saturday</strong>
+          <p>09:00 AM - 05:00 PM</p>
+        </div>
+
+        <div class="col-md-4">
+          <strong>Sunday</strong>
+          <p>Closed</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="map-section">
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL"
+    width="100%"
+    height="400"
+    style="border:0;"
+    loading="lazy">
+  </iframe>
+
+</section>

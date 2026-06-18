@@ -1,0 +1,53 @@
+.contact-section {
+  background: #f8fbff;
+}
+
+.contact-card,
+.contact-info-card,
+.hours-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #666;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #198754;
+  margin-right: 15px;
+}
+
+.btn-success {
+  background: #25D366;
+  border: none;
+}
+
+.hours-section {
+  background: white;
+}
+
+.hours-card {
+  margin-top: 20px;
+}
