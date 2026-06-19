@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
   //private baseUrl = 'http://localhost:8017/api';
-  private baseUrl = 'https://your-render-url.onrender.com/api';
+  private baseUrl = 'https://physio-backend-fme9.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
