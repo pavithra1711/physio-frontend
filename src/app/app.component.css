@@ -20,3 +20,45 @@
   color: white;
   transform: scale(1.1);
 }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* hamburger hidden on desktop */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none !important;   /* IMPORTANT FIX */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0077b6;
+    width: 200px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex !important;   /* IMPORTANT FIX */
+  }
+}

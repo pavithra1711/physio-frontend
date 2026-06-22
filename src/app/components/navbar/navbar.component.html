@@ -1,16 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-  <div class="container">
+<nav class="navbar">
 
-    <a class="navbar-brand fw-bold text-primary" href="/">
-      PhysioCare
-    </a>
+  <div class="logo">Physio Clinic</div>
 
-    <div class="navbar-nav ms-auto">
-      <a class="nav-link" routerLink="/">Home</a>
-      <a class="nav-link" routerLink="/about">About</a>
-      <a class="nav-link" routerLink="/services">Services</a>
-      <a class="nav-link" routerLink="/contact">Contact</a>
-    </div>
+  <div class="menu-icon" (click)="toggleMenu()">☰</div>
 
-  </div>
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/services" (click)="closeMenu()">Services</a></li>
+    <li><a routerLink="/contact" (click)="closeMenu()">Contact Us</a></li>
+    <li><a routerLink="/about" (click)="closeMenu()">About Us</a></li>
+  </ul>
+
 </nav>
