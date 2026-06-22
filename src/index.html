@@ -7,7 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
+
+  <!-- NAVBAR (MOVED INSIDE BODY) -->
+  <nav class="navbar">
+
+    <div class="logo">Physio Clinic</div>
+
+    <!-- Hamburger icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <!-- Menu links -->
+    <ul id="navLinks" class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+
+  </nav>
+
   <app-root></app-root>
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
 </body>
 </html>
